@@ -24,14 +24,21 @@ install:
   - ansible-galaxy install danbohea.homebrew
 
 script:
-  # Basic role syntax check
+  # Syntax check
   - ansible-playbook tests/test.yml -i tests/inventory --syntax-check
 
-  # Role lint check
+  # Lint
   - ansible-lint tests/test.yml
 
   # Run test playbook
   - ansible-playbook tests/test.yml -i tests/inventory
+
+  # Idempotence test (run test playbook again & check output)
+  - >
+    ansible-playbook tests/test.yml -i tests/inventory
+    | grep -q 'changed=0.*failed=0'
+    && (echo 'Idempotence test: pass' && exit 0)
+    || (echo 'Idempotence test: fail' && exit 1)
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
