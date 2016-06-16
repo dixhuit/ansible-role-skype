@@ -15,7 +15,7 @@ Installs & configures Skype on Mac OS X.
 All role default variables are listed below along with their respective default values.
 
 ```
-skype_appdir: "/Applications"[]
+skype_appdir: "/Applications"
 ```
 
 Where to install the app. The value is passed to Homebrew Cask via the `--appdir` option.
