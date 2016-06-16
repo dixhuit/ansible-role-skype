@@ -1,0 +1,21 @@
+dependencies:
+  - danbohea.homebrew
+
+galaxy_info:
+  author: danbohea
+  description: Installs Skype on Mac OS X.
+  license: MIT
+  min_ansible_version: 2.0
+  # In the absence of a 'Mac OS' platform option:
+  platforms:
+  - name: GenericUNIX
+    versions:
+    - all
+    - any
+  galaxy_tags:
+    - cask
+    - homebrew
+    - mac
+    - macsible
+    - osx
+    - skype
