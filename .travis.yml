@@ -2,7 +2,10 @@
 
 # https://docs.travis-ci.com/user/osx-ci-environment
 os: osx
-osx_image: xcode7.3
+osx_image:
+  - xcode7.3
+  - xcode7.1
+  - beta-xcode6.2
 
 install:
   # Debug info
