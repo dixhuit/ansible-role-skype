@@ -24,7 +24,7 @@ Where to install the app. The value is passed to Homebrew Cask via the `--appdir
 skype_dialpadopen: 0
 ```
 
-Sets default dial pad window visibility. Default is to hide the dial pad.
+Sets default dialpad window visibility. Default is to hide the dialpad.
 
 ```
 skype_contactlistviewmode: 1
