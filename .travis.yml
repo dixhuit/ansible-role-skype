@@ -31,7 +31,7 @@ script:
   - ansible-lint tests/test.yml
 
   # Run test playbook
-  - ansible-playbook tests/test.yml -i tests/inventory
+  - ansible-playbook tests/test.yml -i tests/inventory --connection=local
 
   # Idempotence test (run test playbook again & check output)
   - >
