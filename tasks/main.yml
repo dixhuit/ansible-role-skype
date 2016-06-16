@@ -3,7 +3,7 @@
 - name: Install Skype.
   homebrew_cask: name=skype state=present
   environment:
-    HOMEBREW_CASK_OPTS: --appdir={{ skype_appdir }}
+    HOMEBREW_CASK_OPTS: --appdir="{{ skype_appdir }}"
   notify: brew cask cleanup
 
 - name: Set default dialpad window visibility.
@@ -11,7 +11,7 @@
     domain: com.skype.skype
     key: DialpadOpen
     type: int
-    value: {{ skype_dialpadopen }}
+    value: "{{ skype_dialpadopen }}"
   notify:
     - killall Skype
 
@@ -20,6 +20,6 @@
     domain: com.skype.skype
     key: ContactListViewMode
     type: int
-    value: {{ skype_contactlistviewmode }}
+    value: "{{ skype_contactlistviewmode }}"
   notify:
     - killall Skype
