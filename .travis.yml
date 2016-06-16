@@ -17,7 +17,7 @@ install:
   - pip --version
   - ansible --version
   # Install Ansible Lint
-  - pip install -q ansible-lint
+  - sudo pip install -q ansible-lint
   # Create ansible.cfg with correct roles_path
   - printf '[defaults]\nroles_path=../' >ansible.cfg
   # Install required dependencies.
