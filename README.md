@@ -21,13 +21,13 @@ skype_appdir: "/Applications"
 Where to install the app. The value is passed to Homebrew Cask via the `--appdir` option.
 
 ```
-skype_dialpadopen: 0
+skype_DialpadOpen: 0
 ```
 
 Sets default dialpad window visibility. Default is to hide the dialpad.
 
 ```
-skype_contactlistviewmode: 1
+skype_ContactListViewMode: 1
 ```
 
 Sets the default contacts view mode. Default is list view.
