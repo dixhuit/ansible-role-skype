@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/danbohea/ansible-role-skype.svg?branch=master)](https://travis-ci.org/danbohea/ansible-role-skype)
 
-Installs Skype on Mac OS X.
+Installs & configures Skype on Mac OS X.
 
 ## Requirements
 
