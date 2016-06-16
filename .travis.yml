@@ -30,5 +30,8 @@ script:
   # Role lint check
   - ansible-lint tests/test.yml
 
+  # Run test playbook
+  - ansible-playbook tests/test.yml
+
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
