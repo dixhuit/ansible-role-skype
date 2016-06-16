@@ -15,6 +15,7 @@ matrix:
 install:
   # Debug info
   - python --version
+  - brew --version
   # Update Homebrew
   - brew update
   # Install Python, separate from version that ships with OS X
