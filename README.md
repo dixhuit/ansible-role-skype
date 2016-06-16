@@ -4,6 +4,7 @@
 
 Installs & configures Skype on Mac OS X.
 
+
 ## Requirements
 
 - Mac OS 10.9+
@@ -30,6 +31,7 @@ skype_contactlistviewmode: 1
 ```
 
 Sets the default contacts view mode. Default is list view.
+
 
 ## Dependencies
 
