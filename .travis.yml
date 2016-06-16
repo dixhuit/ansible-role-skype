@@ -1,29 +1,25 @@
 ---
-language: python
-python: "2.7"
 
-# Use the new container infrastructure
-sudo: false
-
-# Install ansible
-addons:
-  apt:
-    packages:
-    - python-pip
+# https://docs.travis-ci.com/user/osx-ci-environment
+os: osx
 
 install:
-  # Install ansible
-  - pip install ansible
-
-  # Check ansible version
+  # Debug info
+  - python --version
+  # Update Homebrew
+  - brew update
+  # Install Python, separate from version that ships with OS X
+  - brew install python
+  #  Install Ansible
+  - brew install ansible
+  # Debug info
+  - python --version
+  - pip --version
   - ansible --version
-
   # Install Ansible Lint
   - pip install -q ansible-lint
-
   # Create ansible.cfg with correct roles_path
   - printf '[defaults]\nroles_path=../' >ansible.cfg
-
   # Install required dependencies.
   - ansible-galaxy install danbohea.homebrew
 
