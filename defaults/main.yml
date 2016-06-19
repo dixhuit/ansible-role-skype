@@ -1,7 +1,5 @@
 ---
 
-skype_appdir: "/Applications"
-
 skype_DialpadOpen: 0
 
 skype_ContactListViewMode: 1

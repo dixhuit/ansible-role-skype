@@ -3,7 +3,7 @@
 - name: Install Skype.
   homebrew_cask: name=skype state=present
   environment:
-    HOMEBREW_CASK_OPTS: --appdir="{{ skype_appdir }}"
+    HOMEBREW_CASK_OPTS: --appdir="{{ homebrew_cask_appdir }}"
   notify: brew cask cleanup
 
 - name: Set default dialpad window visibility.
