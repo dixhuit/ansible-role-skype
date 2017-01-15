@@ -5,17 +5,18 @@ galaxy_info:
   author: danbohea
   description: Installs Skype on macOS.
   license: MIT
-  min_ansible_version: 2.0
-  # In the absence of a 'macOS' platform option:
+  min_ansible_version: 2.1
   platforms:
-  - name: GenericUNIX
+  - name: MacOSX
     versions:
-    - all
-    - any
+    - '10.10'
+    - '10.11'
+    - '10.12'
   galaxy_tags:
     - cask
     - homebrew
     - mac
+    - macos
     - macsible
     - osx
     - skype
