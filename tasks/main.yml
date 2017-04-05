@@ -8,7 +8,7 @@
   osx_defaults:
     domain: com.skype.skype
     key: DialpadOpen
-    type: int
+    type: bool
     value: "{{ skype_DialpadOpen }}"
   notify:
     - killall Skype
