@@ -14,13 +14,13 @@ Installs & configures Skype on macOS.
 
 All role default variables are listed below along with their respective default values.
 
-```
+```yaml
 skype_DialpadOpen: 0
 ```
 
 Sets default dialpad window visibility. Default is to hide the dialpad.
 
-```
+```yaml
 skype_ContactListViewMode: 1
 ```
 
@@ -34,7 +34,7 @@ Sets the default contacts view mode. Default is list view.
 
 ## Example Playbook
 
-```
+```yaml
 - hosts: macbook
   connection: local
 
