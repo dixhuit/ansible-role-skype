@@ -7,7 +7,7 @@ Installs & configures Skype on macOS.
 
 ## Requirements
 
-- macOS 10.10, 10.11 or 10.12
+- macOS 10.11 or 10.12
 
 
 ## Role Variables
